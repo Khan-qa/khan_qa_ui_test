@@ -1,7 +1,7 @@
 
 # Дипломный проект по автоматизации тестирования сайта [wikipedia](https://ru.wikipedia.org/)
 <p align="center">
-<a href="https://olx.kz"><img src="images\logo\Wikipedia-logo.svg" width="150" height=150"  alt="wiki-logo"/></a>
+<a href="https://ru.wikipedia.org/"><img src="images\logo\Wikipedia-logo.svg" width="150" height=150"  alt="wiki-logo"/></a>
 </p>
 
 
