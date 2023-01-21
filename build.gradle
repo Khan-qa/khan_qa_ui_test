@@ -3,7 +3,7 @@ plugins {
     id 'io.qameta.allure' version '2.11.2'
 }
 
-group 'kz.airba'
+group 'org.wikipedia'
 version '1.0'
 
 repositories {
@@ -28,12 +28,12 @@ allure {
 
 dependencies {
     testImplementation(
-            'com.codeborne:selenide:6.11.0',
-            'org.junit.jupiter:junit-jupiter:5.9.0',
-            'io.qameta.allure:allure-selenide:2.20.1',
-            'org.aeonbits.owner:owner:1.0.12',
-            'io.github.bonigarcia:webdrivermanager:5.3.1',
-            'com.github.javafaker:javafaker:1.0.2'
+            "com.codeborne:selenide:6.11.0",
+            "org.junit.jupiter:junit-jupiter:5.9.0",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "org.aeonbits.owner:owner:1.0.12",
+            "io.github.bonigarcia:webdrivermanager:5.3.1",
+            "com.github.javafaker:javafaker:1.0.2"
     )
 }
 
