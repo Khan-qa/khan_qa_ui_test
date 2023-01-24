@@ -7,10 +7,10 @@ import org.aeonbits.owner.Config;
 })
 public interface UserConfig extends Config {
 
-    @DefaultValue("Khan Qa")
+    @Key("username")
     String username();
 
-    @DefaultValue("TestPassword2023")
+    @Key("password")
     String password();
 
 }
