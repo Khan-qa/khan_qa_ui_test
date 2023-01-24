@@ -6,3 +6,7 @@ video
 out
 allure-results
 .DS_Store
+/gradle/
+/gradlew
+/gradlew.bat
+/settings.gradle

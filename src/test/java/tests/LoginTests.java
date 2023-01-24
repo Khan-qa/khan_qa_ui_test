@@ -11,7 +11,7 @@ public class LoginTests extends BaseTest {
 
     @Test
     @DisplayName("Проверка авторизации")
-    void loginTest(){
+    void loginTest() {
         loginPage.openLoginPage()
                 .setLogin(UserDataProvider.userName)
                 .setPassword(UserDataProvider.password)
@@ -21,7 +21,7 @@ public class LoginTests extends BaseTest {
 
     @Test
     @DisplayName("Проверка открытия страницы пользователя")
-    void userPageTest () {
+    void userPageTest() {
         loginPage.openLoginPage()
                 .setLogin(UserDataProvider.userName)
                 .setPassword(UserDataProvider.password)
@@ -29,5 +29,4 @@ public class LoginTests extends BaseTest {
                 .openUserPage()
                 .checkThatUserPageOpened(UserDataProvider.userName);
     }
-
 }
