@@ -23,4 +23,6 @@ public interface WebDriverConfig extends Config {
     @DefaultValue("https://ru.wikipedia.org")
     String baseUrl();
 
+    String remoteVideoUrl();
+
 }
