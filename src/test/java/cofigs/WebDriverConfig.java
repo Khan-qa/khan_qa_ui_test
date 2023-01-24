@@ -3,7 +3,7 @@ package cofigs;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:${env}.properties"
+        "classpath:remote.properties"
 })
 public interface WebDriverConfig extends Config {
 
