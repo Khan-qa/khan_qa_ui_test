@@ -10,14 +10,14 @@ public class WebDriverProvider {
     static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
     public static void configuration() {
-        Configuration.browser = WebDriverProvider.config.browser();
-        Configuration.browserVersion = WebDriverProvider.config.browserVersion();
-        Configuration.browserSize = WebDriverProvider.config.browserSize();
-        Configuration.baseUrl = WebDriverProvider.config.baseUrl();
-        String configSource = WebDriverProvider.config.remote();
+        Configuration.browser = config.browser();
+        Configuration.browserVersion = config.browserVersion();
+        Configuration.browserSize = config.browserSize();
+        Configuration.baseUrl = config.baseUrl();
+        String configSource = config.remote();
 
         if (configSource != null) {
-            Configuration.remote = WebDriverProvider.config.remote();
+            Configuration.remote = config.remote();
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
             Configuration.browserCapabilities = capabilities;
