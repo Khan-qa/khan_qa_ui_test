@@ -40,7 +40,7 @@ public class LoginPage {
         return this;
     }
 
-    @Step("Проверить что авторизация прошла успешно")
+    @Step("Проверить что авторизация пользователя {login} прошла успешно")
     public LoginPage checkThatLoginSuccess(String login){
         userPageSpan.shouldHave(text(login));
         return this;
@@ -52,7 +52,7 @@ public class LoginPage {
         return this;
     }
 
-    @Step("Проверить что страница пользователя открылась")
+    @Step("Проверить что страница пользователя {login} открылась")
     public LoginPage checkThatUserPageOpened(String login) {
         heading.shouldHave(text("Здравствуйте, \u202A"+login+"\u202C!"));
         return this;

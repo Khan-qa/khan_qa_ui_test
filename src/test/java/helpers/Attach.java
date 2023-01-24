@@ -1,7 +1,9 @@
 package helpers;
 
+import cofigs.WebDriverConfig;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -14,6 +16,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
+    static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class);
 
     @Attachment(value = "{attachName}", type = "image/png")
     public static byte[] screenshotAs(String attachName) {
@@ -43,7 +46,8 @@ public class Attach {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId + ".mp4";
+        // String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId + ".mp4";
+        String videoUrl = String.format("https://%svideo/%s.mp4", config.remote(), sessionId);
 
         try {
             return new URL(videoUrl);

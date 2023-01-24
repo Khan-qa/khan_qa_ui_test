@@ -10,7 +10,6 @@ public class WebDriverProvider {
     static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
     public static void configuration() {
-
         Configuration.browser = WebDriverProvider.config.browser();
         Configuration.browserVersion = WebDriverProvider.config.browserVersion();
         Configuration.browserSize = WebDriverProvider.config.browserSize();
