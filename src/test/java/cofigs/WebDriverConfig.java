@@ -23,6 +23,7 @@ public interface WebDriverConfig extends Config {
     @DefaultValue("https://ru.wikipedia.org")
     String baseUrl();
 
+    @DefaultValue("https://selenoid.autotests.cloud/video/")
     String remoteVideoUrl();
 
 }
