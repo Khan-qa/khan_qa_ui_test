@@ -7,7 +7,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
-public class BaseTest {
+public class TestBase {
 
     @BeforeAll
     static void setUp() {

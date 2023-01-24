@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import pages.LoginPage;
 import providers.UserDataProvider;
 
-public class LoginTests extends BaseTest {
+public class LoginTests extends TestBase {
 
     LoginPage loginPage = new LoginPage();
 

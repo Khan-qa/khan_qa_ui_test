@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
 
-public class MainPageTests extends BaseTest {
+public class MainPageTests extends TestBase {
 
     MainPage mainPage = new MainPage();
 
@@ -38,7 +38,7 @@ public class MainPageTests extends BaseTest {
 
     @Test
     @DisplayName("Открытие и проверка страницс с содержанием")
-    void qwe() {
+    void openAndCheckContentPage() {
         mainPage.openMainPage()
                 .openContentPage()
                 .checkContentPage();
