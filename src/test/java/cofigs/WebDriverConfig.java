@@ -7,7 +7,7 @@ import org.aeonbits.owner.Config;
 })
 public interface WebDriverConfig extends Config {
 
-    @Key("webdriver.browser")
+    @Key("browser")
     String browser();
 
     @Key("browserVersion")
@@ -19,7 +19,7 @@ public interface WebDriverConfig extends Config {
     @Key("remoteUrl")
     String remote();
 
-    @Key("webdriver.baseUrl")
+    @Key("baseUrl")
     String baseUrl();
 
     @Key("remoteVideoUrl")
