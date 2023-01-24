@@ -8,22 +8,22 @@ import org.aeonbits.owner.Config;
 })
 public interface WebDriverConfig extends Config {
 
-    @DefaultValue("chrome")
+    @Key("browser")
     String browser();
 
-    @DefaultValue("100.0")
+    @Key("browserVersion")
     String browserVersion();
 
-    @DefaultValue("1920x1080")
+    @Key("browserSize")
     String browserSize();
 
     @Key("remoteUrl")
     String remote();
 
-    @DefaultValue("https://ru.wikipedia.org")
+    @Key("baseUrl")
     String baseUrl();
 
-    @DefaultValue("https://selenoid.autotests.cloud/video")
+    @Key("remoteVideoUrl")
     String remoteVideoUrl();
 
 }
