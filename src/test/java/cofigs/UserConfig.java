@@ -8,9 +8,11 @@ import org.aeonbits.owner.Config;
 public interface UserConfig extends Config {
 
     @Key("username")
+    @DefaultValue("Khan Qa")
     String username();
 
     @Key("password")
+    @DefaultValue("TestPassword2023")
     String password();
 
 }
