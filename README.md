@@ -57,6 +57,7 @@ gradle clean test
 -DbrowserVersion=${browserVersion}
 -DbrowserSize=${browserSize}
 -DremoteUrl=${remoteUrl}
+-DrunType=remote
 ```
 
 ## Параметры сборки
