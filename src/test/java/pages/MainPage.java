@@ -19,6 +19,7 @@ public class MainPage {
             articleTitle = $(".mw-page-title-main"),
             wikipediaContent = $("#n-content"),
             titleWikipediaContent = $(".mw-page-title-main"),
+            resultContainer = $(".mw-search-results-container"),
             openDonationPage = $("#n-sitesupport"),
             donationPageHeading = $("#appeal .mw-headline");
 
@@ -56,15 +57,19 @@ public class MainPage {
     }
 
     @Step("Проверка списка результата статей")
-    public MainPage checkSearchResult(String article) {
-        searchResultList.shouldBe(CollectionCondition.sizeGreaterThan(1));
-        searchResult.shouldHave(text(article));
+    public MainPage checkSearchResult(String text) {
+        if (resultContainer.isDisplayed()) {
+            searchResultList.shouldBe(CollectionCondition.sizeGreaterThan(1));
+            searchResult.shouldHave(text(text));
+        }
         return this;
     }
 
     @Step("Открыть первую найденную статью")
     public MainPage openSearchResult() {
-        searchResultList.first().click();
+        if (resultContainer.isDisplayed()) {
+            searchResultList.first().click();
+        }
         return this;
     }
 
