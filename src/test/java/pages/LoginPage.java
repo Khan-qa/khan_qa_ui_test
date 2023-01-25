@@ -57,5 +57,4 @@ public class LoginPage {
         heading.shouldHave(text("Здравствуйте, \u202A"+login+"\u202C!"));
         return this;
     }
-
 }

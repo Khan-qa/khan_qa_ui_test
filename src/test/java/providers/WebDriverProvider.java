@@ -18,11 +18,8 @@ public class WebDriverProvider {
         Configuration.baseUrl = browserConfig.baseUrl();
         String runType = System.getProperty("runType", "local");
 
-
         if (!runType.equals("local")) {
             Configuration.remote = remoteConfig.remote();
-
-            System.out.println(Configuration.remote = remoteConfig.remote());
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
             Configuration.browserCapabilities = capabilities;
