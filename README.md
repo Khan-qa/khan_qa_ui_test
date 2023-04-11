@@ -1,5 +1,5 @@
 
-# Дипломный проект по автоматизации тестирования сайта [wikipedia](https://ru.wikipedia.org/)
+# Пример проекта по автоматизации тестирования сайта [wikipedia](https://ru.wikipedia.org/)
 <p align="center">
 <a href="https://ru.wikipedia.org/"><img src="images\logo\Wikipedia-logo.svg" width="150" height=150"  alt="wiki-logo"/></a>
 </p>
